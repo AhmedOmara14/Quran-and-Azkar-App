@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:flexDirection="row_reverse"
+    app:justifyContent="center"
+    app:alignItems="center"
+    app:flexWrap="wrap">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignItems="center"
+        app:flexDirection="row_reverse"
+        app:flexWrap="wrap"
+        android:layout_marginBottom="5dp"
+        app:justifyContent="center">
+
+
+        <TextView
+            android:id="@+id/ayaes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text=" الله الرحمن الرحيم"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:drawablePadding="-10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="4dp"
+            />
+
+
+    </com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>

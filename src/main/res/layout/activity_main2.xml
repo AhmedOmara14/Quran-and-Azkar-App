@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        tools:context=".ui.main.Main2Activity">
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#fff"
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            tools:ignore="MissingConstraints">
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/fragment"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:theme="@style/ThemeOverlay.MaterialComponents.Light"
+            app:tabTextColor="#b98a35"
+            android:textDirection="rtl"
+            tools:ignore="MissingConstraints">
+
+        </com.google.android.material.tabs.TabLayout>
+        </com.google.android.material.appbar.AppBarLayout>
+    </RelativeLayout>
+</layout>

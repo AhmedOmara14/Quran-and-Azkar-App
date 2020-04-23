@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.main.quranFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#aa761a">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp">
+                <Button
+                    android:id="@+id/btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:gravity="end"
+                    android:layout_marginLeft="20dp"
+
+                    android:layout_marginRight="290dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_search_black_24dp"
+
+                    >
+
+                </Button>
+                 <EditText
+                     android:id="@+id/searchview"
+                     android:layout_height="match_parent"
+                     android:layout_width="match_parent"
+                     android:textDirection="rtl"
+                     android:textColorHint="#b98a35"
+                     android:hint="ابحث هنا"
+                     android:textSize="25dp"
+                     android:paddingRight="30dp"
+                     android:background="@drawable/search"
+                     android:drawablePadding="10dp"
+                     />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/Recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:textDirection="firstStrongRtl"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="1dp"
+                tools:layout_editor_absoluteY="1dp" />
+        </LinearLayout>
+    </FrameLayout>
+</layout>

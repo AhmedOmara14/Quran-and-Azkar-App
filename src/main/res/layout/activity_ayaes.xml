@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.ayes"
+        android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/name_sure"
+                 android:layout_width="match_parent"
+                 android:layout_height="60dp"
+                 android:gravity="center_vertical|center"
+                 android:text="الفاتحه"
+                 android:textAlignment="center"
+                 android:background="@drawable/aya_sure"
+                 android:textColor="#000"
+                 android:textSize="25dp"
+                 android:textStyle="bold" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Recycler2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center"
+            android:layout_below="@+id/name_sure"
+            android:layout_marginTop="10dp"
+            android:layoutDirection="rtl"
+            android:textAlignment="center"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+</layout>
